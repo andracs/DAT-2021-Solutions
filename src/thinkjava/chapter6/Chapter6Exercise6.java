@@ -4,7 +4,7 @@
  * Licensed under the MIT License
  * 21/09/2021
  */
-package dk.zealand;
+package thinkjava.chapter6;
 
 // Sepå https://books.trinket.io/thinkjava2/chapter6.html
 public class Chapter6Exercise6 {

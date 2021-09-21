@@ -1,4 +1,4 @@
-package dk.zealand;
+package thinkjava.chapter6;
 
 public class Chapter6Exercise4 {
 
