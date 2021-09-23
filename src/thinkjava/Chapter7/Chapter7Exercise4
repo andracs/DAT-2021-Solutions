@@ -1,0 +1,26 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+      boolean [] findPrimenumbers = sieve(10);
+}
+
+    // returns a boolean array from 0 to one less than n. Is the number prime, it returns true, else false
+    public static boolean[] sieve(int n){
+        n = n-1;
+        boolean [] prime = new boolean[n];      //boolean is by default false
+        for (int i = 0 ; i < n; i++){           //loop, counting for each variable in array
+            prime[i] = true;                    //changing boolean to true
+                for (int a = 2 ; a < i ; a++){  //loop counting all numbers between 2 and the variable value
+                    int test = i % a;           //calculating for prime number
+                if (test == 0 ) {               //testing for reminders
+                    prime[i] = false;           //Changing to false if it's not prime-number
+                }
+                }
+
+        }
+        prime[0] = false;   //0 have not been checked if it is prime, but it can not be divided by 1
+        prime[1] = false;   //1 have not been checked, but it can not be divided by any other number
+        return prime;
+    }
